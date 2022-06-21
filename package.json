@@ -1,7 +1,14 @@
 {
-  "name": "hooks",
+  "name": "hook",
   "version": "0.1.0",
   "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "lint:fix": "eslint . --ext .js,.ts,.tsx --fix"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -16,11 +23,12 @@
     "typescript": "^4.4.2",
     "web-vitals": "^2.1.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.29.0",
+    "@typescript-eslint/parser": "^5.29.0",
+    "eslint": "^8.18.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +47,10 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "hook reactjs",
+  "main": "index.js",
+  "repository": "https://github.com/DevHaXuann/hooks.git",
+  "author": "thanhlm <thanhle12345789@gmail.com>",
+  "license": "MIT"
 }
