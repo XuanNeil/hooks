@@ -39,7 +39,7 @@ module.exports  = {
         "simple-import-sort/imports": "error",
         "simple-import-sort/exports": "error",
         "import/first": "error",
-        "import/newline-after-import": ["error", {"count": 2}],
+        "import/newline-after-import": ["error"],
         "import/no-duplicates": ["error", {"considerQueryString": true}],
         "@typescript-eslint/no-empty-function" : "off",
         "no-unused-vars": ["error", {"args": "all", "caughtErrors": "all" }],
