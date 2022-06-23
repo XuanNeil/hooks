@@ -45,10 +45,6 @@ module.exports = {
       "considerQueryString": true
     }],
     "@typescript-eslint/no-empty-function": "off",
-    "no-unused-vars": ["error", {
-      "args": "all",
-      "caughtErrors": "all"
-    }],
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off"
   }
