@@ -15,7 +15,8 @@ module.exports = {
   "extends": [
       "eslint:recommended",
       "plugin:@typescript-eslint/recommended",
-      "plugin:storybook/recommended"
+      "plugin:storybook/recommended",
+      "plugin:react-hooks/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
@@ -29,7 +30,8 @@ module.exports = {
       "react",
       "@typescript-eslint",
       "simple-import-sort",
-      "import"
+      "import",
+      "react-hooks"
   ],
   "rules": {
     "no-undef": "off",
@@ -45,6 +47,8 @@ module.exports = {
     }],
     "@typescript-eslint/no-empty-function": "off",
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn"
   }
 };
