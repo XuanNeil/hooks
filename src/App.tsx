@@ -1,8 +1,11 @@
+import { ChakraProvider } from "@chakra-ui/react";
+import { theme } from "@src/theme";
+
 function App() {
    return (
-      <div className="App">
-         <p>Hooks Reactjs</p>
-      </div>
+      <ChakraProvider resetCSS theme={theme}>
+         <h1>React hooks</h1>
+      </ChakraProvider>
    );
 }
 
