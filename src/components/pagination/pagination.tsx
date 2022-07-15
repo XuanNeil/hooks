@@ -1,6 +1,6 @@
 import "./panigation.css";
 
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 
 interface IPaginationProps {
    currentPage: number;
@@ -26,11 +26,7 @@ export const Pagination: React.FC<IPaginationProps> = (props): JSX.Element => {
    const count = Math.ceil(totalPage / limitPage);
    const [pageArr, setPageArr] = useState<(number | string)[]>([]);
 
-   useEffect(() => {
-      pageChange();
-   }, [currentPage, limitPage, pageSizeOptions, totalPage]);
-
-   const pageChange = () => {
+   const pageChange = useCallback(() => {
       let newArr = [];
       let c = 1;
       if (count <= 6) {
@@ -58,7 +54,11 @@ export const Pagination: React.FC<IPaginationProps> = (props): JSX.Element => {
          }
       }
       setPageArr(newArr);
-   };
+   }, [count, currentPage]);
+
+   useEffect(() => {
+      pageChange();
+   }, [pageChange]);
 
    const onChangePage = (value: number) => {
       if (handleChangePage) {
