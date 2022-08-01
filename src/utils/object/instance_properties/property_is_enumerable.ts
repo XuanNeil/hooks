@@ -1,8 +1,10 @@
-/*
+/**
  * method cho biết liệu thuộc tính được chỉ định có thể liệt kê được hay không và có phải là thuộc tính riêng của đối tượng hay không.
  * syntax: propertyIsEnumerable(prop)
+ *
  * parameter:
  *   prop: The name of the property cần kiểm tra.
+ *
  * return:
  *   return boolean.
  *
