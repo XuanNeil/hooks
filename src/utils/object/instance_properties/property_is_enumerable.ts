@@ -17,7 +17,7 @@
  */
 
 /* eslint-disable @typescript-eslint/no-explicit-any */
-const newObject: any = {};
+export const newObject: any = {};
 const array1 = [];
 newObject.property1 = 42;
 array1[0] = 42;
